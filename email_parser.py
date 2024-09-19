@@ -2,7 +2,6 @@ import win32com.client as win32
 from datetime import datetime
 import time
 import os
-import pandas as pd
 import ctypes
 import traceback
 
