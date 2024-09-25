@@ -5,16 +5,6 @@ import os
 import ctypes
 import traceback
 
-"""
-Read the mailing list as a pandas dataframe
-"""
-mailing_list = "mailing_list.xlsx"
-
-mailing_list_df = pd.read_excel(mailing_list)
-
-# Fill the any NA values in the mailing list
-mailing_list_df = mailing_list_df.fillna(method="ffill", axis=0)
-
 # Define custom Exception raised when Outlook is shut
 class ClosedOutlookException(Exception):
     "Raised when the Outlook application is closed"
